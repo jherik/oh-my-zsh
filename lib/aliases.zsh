@@ -17,8 +17,12 @@ alias history='fc -l 1'
 # List direcory contents
 alias lsa='ls -lah'
 alias l='ls -la'
-alias ll='ls -l'
+alias ll='ls -alF'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
+
+# misc
+alias cucumber='cucumber --format pretty'
+alias rspec='rspec --color'
 

@@ -1,7 +1,7 @@
 # Aliases
 alias g='git'
 compdef g=git
-alias gst='git status'
+alias gs='git status'
 compdef _git gst=git-status
 alias gl='git pull'
 compdef _git gl=git-pull
@@ -17,7 +17,9 @@ alias gca='git commit -v -a'
 compdef _git gca=git-commit
 alias gco='git checkout'
 compdef _git gco=git-checkout
-alias gcm='git checkout master'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
+alias gbam='git add . && git commit -am'
 alias gb='git branch'
 compdef _git gb=git-branch
 alias gba='git branch -a'
@@ -30,12 +32,16 @@ alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=5'
 compdef _git glgg=git-log
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias glp='git log --oneline --decorate'
 alias gss='git status -s'
 compdef _git gss=git-status
 alias ga='git add'
 compdef _git ga=git-add
 alias gm='git merge'
 compdef _git gm=git-merge
+alias gsu='git submodule'
+alias gf='git fetch'
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 
