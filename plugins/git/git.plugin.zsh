@@ -42,6 +42,7 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias gsu='git submodule'
 alias gf='git fetch'
+alias gd='git diff'
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 
