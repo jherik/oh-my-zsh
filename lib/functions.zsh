@@ -27,5 +27,3 @@ if [[ "$(uname)" == "Darwin" ]] ; then
   function cdff { cd "`ff $@`"; };
 fi
 
-function git(){hub "$@"}
-
