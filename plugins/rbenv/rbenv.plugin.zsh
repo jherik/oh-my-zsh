@@ -38,7 +38,6 @@ done
 unset rbenvdir
 
 if [ $FOUND_RBENV -eq 0 ] ; then
-    echo "SRSFOUNDIT"
   alias rubies='ruby -v'
   function gemsets() { echo 'not supported' }
   function rbenv_prompt_info() { echo "system: $(ruby -v | cut -f-2 -d ' ')" }
